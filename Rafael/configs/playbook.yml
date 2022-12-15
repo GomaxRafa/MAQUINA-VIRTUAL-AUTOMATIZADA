@@ -1,0 +1,9 @@
+- hosts: localhost
+  become: true
+  handlers:
+  tasks:
+
+    - name: Inicia stack
+      shell: docker compose up -d
+      args:
+        chdir: /configs/

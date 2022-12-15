@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+- job_name: petshop
+  static_configs:
+  - targets: ['container-petshop:3000']
